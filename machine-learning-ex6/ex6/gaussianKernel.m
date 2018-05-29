@@ -17,7 +17,8 @@ sim = 0;
 %
 
 
-
+euq_dist = sum(sum((x1 - x2) .^ 2));
+sim = exp(-1 * euq_dist / (2 * sigma ^ 2));
 
 
 
